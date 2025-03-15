@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start:activity": "nodemon src/activity.js",
     "start:publisher": "node src/publisher.js",
     "start:subscriber": "node src/subscriber.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,6 +15,8 @@
   "license": "ISC",
   "packageManager": "pnpm@10.6.2+sha256.20072a1f6edd17646ea9234bf32c42d563dad37b2973e97a2dde5c17774a824d",
   "dependencies": {
+    "@emailjs/nodejs": "^5.0.2",
+    "dotenv": "^16.4.7",
     "nats": "^2.29.2"
   },
   "devDependencies": {
